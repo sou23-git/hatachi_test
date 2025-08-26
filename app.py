@@ -77,7 +77,7 @@ def handle_message(event):
     display_name = profile.display_name
     
     #返信メッセージ
-    reply = f'{display_name}産のメッセージ\n{received_message}'
+    reply = f'{display_name}さんのメッセージ\n{received_message}'
     
     #オウム返し
     line_bot_api.reply_message(ReplyMessageRequest(
