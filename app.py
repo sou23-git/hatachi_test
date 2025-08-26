@@ -73,7 +73,7 @@ def handle_message(event):
     received_message = event.message.text
     
     #APIを呼んで送信者のプロフィールを取得
-    profile = line_bot_api.get_profile(event.sourse.user_id)
+    profile = line_bot_api.get_profile(event.source.user_id)
     display_name = profile.display_name
     
     #返信メッセージ
